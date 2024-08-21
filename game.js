@@ -88,3 +88,11 @@ function animatePress(currentColour){
     $("#" + currentColour).removeClass("pressed");
   }, 100);
 }
+
+function getYear(){
+  let date = new Date();
+  year = date.getFullYear()
+  return year;
+}
+
+document.getElementById("currentYear").textContent = getYear();
